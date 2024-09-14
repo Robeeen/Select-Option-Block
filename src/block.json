@@ -19,6 +19,10 @@
 		},
 		"content" : {
 			"type" : "string"
+		},
+		"selectedItems": {
+			"type" : "array",
+			"default" : []
 		}
 	},
 	"textdomain": "search-sky",
