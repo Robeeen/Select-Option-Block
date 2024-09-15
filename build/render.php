@@ -20,20 +20,22 @@
 
 ?>
 
-<p <?php echo get_block_wrapper_attributes(); ?>>
+<div <?php echo get_block_wrapper_attributes(); ?>>
 		<?php
-		echo "Selected Items: <br />";
+		echo "Selected Items: <br />";?>
+		<ul><?Php
 		foreach ($selectedItems as $itemId) {
 			$item = array_filter($items, function($i) use ($itemId) {
 				return $i['id'] === $itemId;
 			});
 			$item = reset($item); // Get the first matching item or null
 			
-			echo ($item ? htmlspecialchars($item['label']) . '<br />' : '');
+			?><li><?php echo ($item ? htmlspecialchars($item['label']) . '<br />' : ''); ?></li><?php
 			}?>
+			</ul>
 
 	<?php esc_html_e( 'The wrtten text is : ' . $attributes['content']); ?> <br />
 	<?php esc_html_e( 'The size of the Pant is selected: ' . $attributes['simpleSize'] ) ; ?>
 
 	
-</p>
+		</div>

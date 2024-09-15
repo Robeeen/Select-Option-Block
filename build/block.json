@@ -17,7 +17,10 @@
       "gradients": true
     },
     "spacing": {
-      "padding": true,
+      "padding": [
+        "top",
+        "bottom"
+      ],
       "margin": true,
       "blockGap": true,
       "customSpacingSize": true
@@ -37,7 +40,13 @@
     },
     "selectedItems": {
       "type": "array",
-      "default": []
+      "default": [],
+      "style": {
+        "margin": "value",
+        "padding": {
+          "top": "value"
+        }
+      }
     }
   },
   "textdomain": "search-sky",
