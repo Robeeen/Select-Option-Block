@@ -19,7 +19,9 @@
     "spacing": {
       "padding": [
         "top",
-        "bottom"
+        "bottom",
+        "left",
+        "right"
       ],
       "margin": true,
       "blockGap": true,
@@ -40,13 +42,7 @@
     },
     "selectedItems": {
       "type": "array",
-      "default": [],
-      "style": {
-        "margin": "value",
-        "padding": {
-          "top": "value"
-        }
-      }
+      "default": []
     }
   },
   "textdomain": "search-sky",

@@ -66,7 +66,7 @@ export default function Edit({ attributes, setAttributes }) {
 				/>
 
 				<SelectControl
-					label={__('Size of the Pant: ')}
+					label={__('Size of the Trouser: ')}
 					value={simpleSize}
 					options={[
 						{ label: 'Big', value: 'West-40-Inch' },

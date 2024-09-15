@@ -32,10 +32,9 @@
 			
 			?><li><?php echo ($item ? htmlspecialchars($item['label']) . '<br />' : ''); ?></li><?php
 			}?>
-			</ul>
+			</ul><hr />
 
-	<?php esc_html_e( 'The wrtten text is : ' . $attributes['content']); ?> <br />
-	<?php esc_html_e( 'The size of the Pant is selected: ' . $attributes['simpleSize'] ) ; ?>
+		<?php esc_html_e($attributes['content']); ?> <br /> <br /> <hr />
+		<?php esc_html_e( 'Size of the Trouser: ' . $attributes['simpleSize'] ) ; ?>
 
-	
-		</div>
+</div>
