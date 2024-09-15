@@ -62,13 +62,10 @@ export default function Edit({ attributes, setAttributes }) {
 							key={item.id}
 							label={item.label}
 							checked={selectedItems.includes(item.id)}
-							onChange={() => toggleItem(item.id)}
-
-						
+							onChange={() => toggleItem(item.id)}						
 						/>
 						)						
 					})}
-
 				</PanelBody>
 			</InspectorControls>
 
@@ -81,7 +78,6 @@ export default function Edit({ attributes, setAttributes }) {
 							const item = items.find((i) => i.id === itemId);
 							return <li key={itemId}>{item ? item.label : ''}</li>;
 						})}
-						{console.log(selectedItems)}
 					</ul>
 				</div>
 
