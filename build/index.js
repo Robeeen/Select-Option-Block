@@ -21,37 +21,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
-/**
- * Retrieves the translation of text.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
- */
 
 
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
-
-
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
- */
-
-
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @return {Element} Element to render.
- */
 
 
 
@@ -68,13 +39,34 @@ function Edit({
 
   const items = [{
     id: 'item1',
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Variant 1')
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('HTML')
   }, {
     id: 'item2',
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Variant 2')
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('CSS3')
   }, {
     id: 'item3',
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Variant 3')
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('JsScript')
+  }, {
+    id: 'item4',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('React Js')
+  }, {
+    id: 'item5',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Next Js')
+  }, {
+    id: 'item6',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Python')
+  }, {
+    id: 'item7',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Php')
+  }, {
+    id: 'item8',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('WebPack')
+  }, {
+    id: 'item9',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Redux')
+  }, {
+    id: 'item10',
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('TypeScript')
   }];
   const toggleItem = itemId => {
     const newSelectedItems = selectedItems.includes(itemId) ? selectedItems.filter(item => item !== itemId) : [...selectedItems, itemId];
@@ -85,7 +77,7 @@ function Edit({
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Select Variants'),
+        title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Select Languages'),
         children: items.map(item => {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.CheckboxControl, {
             label: item.label,
@@ -118,13 +110,13 @@ function Edit({
         value: simpleSize,
         options: [{
           label: 'Big',
-          value: '100%'
+          value: 'West-40-Inch'
         }, {
           label: 'Medium',
-          value: '50%'
+          value: 'West-34-Inch'
         }, {
           label: 'Small',
-          value: '25%'
+          value: 'West-29-Inch'
         }],
         onChange: value => setAttributes({
           simpleSize: value
@@ -264,7 +256,7 @@ module.exports = window["wp"]["i18n"];
   \************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/search-sky","version":"0.1.0","title":"Search Sky","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false,"align":true},"attributes":{"simpleSize":{"type":"string","default":"100%"},"content":{"type":"string"},"selectedItems":{"type":"array","default":[]}},"textdomain":"search-sky","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"create-block/search-sky","version":"0.1.0","title":"Search Sky","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","example":{},"supports":{"html":false,"align":true,"color":{"text":true,"background":true,"gradients":true},"spacing":{"padding":true,"margin":true,"blockGap":true,"customSpacingSize":true},"typography":{"fontSize":true,"lineHeight":true}},"attributes":{"simpleSize":{"type":"string","default":"100%"},"content":{"type":"string"},"selectedItems":{"type":"array","default":[]}},"textdomain":"search-sky","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

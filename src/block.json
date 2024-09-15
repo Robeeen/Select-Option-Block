@@ -10,7 +10,22 @@
 	"example": {},
 	"supports": {
 		"html": false,
-		"align": true
+		"align": true,
+		"color": {
+			"text": true,
+			"background": true,
+			"gradients": true
+		},
+		"spacing": {
+			"padding": [ "top", "bottom" ],
+			"margin": true,
+			"blockGap": true,
+			"customSpacingSize": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		}
 	},
 	"attributes": {
 		"simpleSize" : {
@@ -22,8 +37,15 @@
 		},
 		"selectedItems": {
 			"type" : "array",
-			"default" : []
+			"default" : [],
+			"style": {
+			"margin": "value",
+			"padding": {
+				"top": "value"
+			}
 		}
+		}
+		
 	},
 	"textdomain": "search-sky",
 	"editorScript": "file:./index.js",

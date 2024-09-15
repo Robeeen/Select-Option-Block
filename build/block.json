@@ -10,7 +10,22 @@
   "example": {},
   "supports": {
     "html": false,
-    "align": true
+    "align": true,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true,
+      "blockGap": true,
+      "customSpacingSize": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
   },
   "attributes": {
     "simpleSize": {

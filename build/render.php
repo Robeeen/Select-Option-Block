@@ -6,9 +6,16 @@
 <?php
 	$selectedItems = $attributes['selectedItems'];
 	$items = [
-		['id' => 'item1', 'label' => __('Variant 1')],
-		['id' => 'item2', 'label' => __('Variant 2')],
-		['id' => 'item3', 'label' => __('Variant 3')]
+		['id' => 'item1', 'label' => __('HTML')],
+		['id' => 'item2', 'label' => __('CSS3')],
+		['id' => 'item3', 'label' => __('JsScript')],
+		['id' => 'item4', 'label' => __('React Js')],
+		['id' => 'item5', 'label' => __('Next Js')],
+		['id' => 'item6', 'label' => __('Python')],
+		['id' => 'item7', 'label' => __('Php')],
+		['id' => 'item8', 'label' => __('WebPack')],
+		['id' => 'item9', 'label' => __('Redux')],
+		['id' => 'item10', 'label' => __('TypeScript')],
 	];
 
 ?>
