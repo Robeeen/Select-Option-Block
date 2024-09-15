@@ -5,13 +5,28 @@
 ?>
 <?php
 	$selectedItems = $attributes['selectedItems'];
-
-
-
+	$items = [
+		['id' => 'item1', 'label' => __('Variant 1')],
+		['id' => 'item2', 'label' => __('Variant 2')],
+		['id' => 'item3', 'label' => __('Variant 3')]
+	];
 
 ?>
+
 <p <?php echo get_block_wrapper_attributes(); ?>>
+	
 	<?php esc_html_e( 'The wrtten text is : ' . $attributes['content']); ?> <br />
 	<?php esc_html_e( 'The size of the Pant is selected: ' . $attributes['simpleSize'] ) ; ?>
+	<?php
+
+		foreach ($selectedItems as $itemId) {
+			$item = array_filter($items, function($i) use ($itemId) {
+				return $i['id'] === $itemId;
+			});
+			$item = reset($item); // Get the first matching item or null
+			echo '<li key="' . htmlspecialchars($itemId) . '">' . ($item ? htmlspecialchars($item['label']) : '') . '</li>';
+		}
+		
+	?>
 	
 </p>

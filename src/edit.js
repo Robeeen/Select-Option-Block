@@ -36,7 +36,7 @@ import { SelectControl, PanelBody, CheckboxControl } from '@wordpress/components
 
 export default function Edit({ attributes, setAttributes }) {
 	const { simpleSize, content, selectedItems } = attributes;
-	console.log(simpleSize);
+	//console.log(selectedItems);
 
 	const items = [
 		{ id: 'item1', label: __('Variant 1') },
@@ -63,9 +63,10 @@ export default function Edit({ attributes, setAttributes }) {
 							label={item.label}
 							checked={selectedItems.includes(item.id)}
 							onChange={() => toggleItem(item.id)}
-						/>
-						)
+
 						
+						/>
+						)						
 					})}
 
 				</PanelBody>
@@ -80,6 +81,7 @@ export default function Edit({ attributes, setAttributes }) {
 							const item = items.find((i) => i.id === itemId);
 							return <li key={itemId}>{item ? item.label : ''}</li>;
 						})}
+						{console.log(selectedItems)}
 					</ul>
 				</div>
 
